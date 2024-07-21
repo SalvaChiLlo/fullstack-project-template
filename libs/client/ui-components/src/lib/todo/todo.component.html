@@ -1,0 +1,26 @@
+<div class="card bg-light mb-3" style="max-width: 18rem">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    {{ todo().title }}
+    <button (click)="deleteTodo()">Del</button>
+  </div>
+  <div class="card-body">
+    <h6  class="card-title">{{todo().id}}</h6>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p>
+    <div class="form-check form-switch">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        role="switch"
+        [id]="todo().id"
+        [checked]="todo().completed"
+        (change)="changeCompletedStatus()"
+      />
+      <label class="form-check-label" for="flexSwitchCheckDefault"
+        >Completed</label
+      >
+    </div>
+  </div>
+</div>

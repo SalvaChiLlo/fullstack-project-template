@@ -1,0 +1,7 @@
+export DATABASE_TYPE=sqlite
+export DATABASE_NAME=data-platform
+export DATABASE_PATH=tmp/development.sqlite
+export DATABASE_HOST=
+export DATABASE_PORT=
+export DATABASE_USERNAME=
+export DATABASE_PASSWORD=
